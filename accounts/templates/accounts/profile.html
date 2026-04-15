@@ -1,0 +1,8 @@
+<h1>Profile</h1>
+
+<p>User: {{ profile.user.username }}</p>
+<p>Level: {{ profile.level }}</p>
+<p>Kanji learned: {{ profile.total_kanji_learned }}</p>
+<p>Streak: {{ profile.streak }}</p>
+
+<a href="{% url 'home' %}">Return Home</a>
