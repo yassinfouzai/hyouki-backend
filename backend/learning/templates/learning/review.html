@@ -1,0 +1,23 @@
+<h1>Review Session</h1>
+
+{% if message %}
+
+    <p>{{ message }}</p>
+    <a href="/">Go Home</a>
+
+{% else %}
+
+    <p>Type: {{ progress.item.item_type }}</p>
+    <p>Tier: {{ progress.tier }} {{ progress.tier_level }}</p>
+
+    <h2>{{ progress.item.character }}</h2>
+
+    <p>{{ progress.item.description }}</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input name="answer" placeholder="Answer" required>
+        <button type="submit">Submit</button>
+    </form>
+
+{% endif %}

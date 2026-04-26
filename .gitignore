@@ -1,4 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment variables
 .env
-venv/*
+
+# Database (SQLite)
 db.sqlite3
-accounts/_pychache_/*
+db.sqlite3-journal
+
+# Django
+*.log
+local_settings.py
+
+# Media / uploads (optional but recommended)
+media/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
